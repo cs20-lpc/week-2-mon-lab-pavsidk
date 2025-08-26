@@ -1,4 +1,8 @@
 #include "Student.hpp"
+#include <iostream>
+#include <string>
+#include <limits>
+using namespace std;
 
 /*******************************************************************************
  * Function prototypes
@@ -69,7 +73,7 @@ void getInput(Student objArray[], const int SIZE) {
         cin >> t;
 
         // need to ignore the newline for the next iteration
-        cin.ignore();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
         // store the data from the user into the current object in the array
         objArray[i].setName(s);
