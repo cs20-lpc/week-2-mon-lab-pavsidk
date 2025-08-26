@@ -6,13 +6,13 @@ using namespace std;
 Student::Student() {
     name = new string("");
     age = new int(0);
-    cout << "Student object created!" << endl;
+    cout << "Student object created! \n";
 }
 
 Student::~Student(){
     delete name;
     delete age;
-    cout << "Student object destroyed!" << endl;
+    cout << "Student object destroyed! \n";
 }
 
 void Student::setName(string s) {
